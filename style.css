@@ -1,15 +1,10 @@
-
-/* =========================
-   КАПРИЧЧИ — DESIGN SYSTEM
-   ========================= */
-
 :root {
-  --bg: #0a0a0a;
-  --bg-soft: #101010;
-  --card: #121212;
+  --bg: #1d1d1d;
+  --bg-soft: #161616;
+  --card: #262626;
   --white: #f5f5f5;
-  --muted: #929292;
-  --line: #29212d;
+  --muted: #A0A0A0;
+  --line: #3A2A3D;
   --purple: #D500F9;
   --pink: #FF007F;
 
@@ -209,7 +204,7 @@ h2 > span,
   position: relative;
   z-index: 20;
   background: var(--bg);
-  border-bottom: 1px solid #1b1b1b;
+  border-bottom: 1px solid #303030;
 }
 
 .header-inner {
@@ -310,17 +305,17 @@ h2 > span,
   background:
     linear-gradient(
       90deg,
-      rgba(10, 10, 10, 0.98) 0%,
-      rgba(10, 10, 10, 0.83) 38%,
-      rgba(10, 10, 10, 0.36) 72%,
-      rgba(10, 10, 10, 0.42) 100%
+      rgba(30, 30, 30, 0.97) 0%,
+      rgba(30, 30, 30, 0.82) 38%,
+      rgba(30, 30, 30, 0.36) 72%,
+      rgba(30, 30, 30, 0.42) 100%
     ),
     linear-gradient(
       0deg,
       var(--bg) 0%,
       transparent 24%,
       transparent 82%,
-      rgba(10, 10, 10, 0.35) 100%
+      rgba(30, 30, 30, 0.35) 100%
     );
 }
 
@@ -464,7 +459,7 @@ h2 > span,
   aspect-ratio: 1 / 1;
   width: 100%;
   overflow: hidden;
-  background: #191919;
+  background: #292929;
 }
 
 .pizza-photo img {
@@ -491,7 +486,7 @@ h2 > span,
   height: 34px;
   place-items: center;
 
-  background: rgba(10, 10, 10, 0.8);
+  background: rgba(30, 30, 30, 0.88);
   border: 1px solid rgba(255, 255, 255, 0.2);
 
   font-size: 10px;
@@ -539,7 +534,7 @@ h2 > span,
   margin-top: 20px;
   padding-top: 15px;
 
-  border-top: 1px solid #292929;
+  border-top: 1px solid #3A3A3A;
   color: #929292;
 
   font-size: 9px;
@@ -555,7 +550,7 @@ h2 > span,
 
   margin-top: 36px;
   padding-top: 24px;
-  border-top: 1px solid #242424;
+  border-top: 1px solid #383838;
 }
 
 .menu-footer > p {
@@ -572,7 +567,7 @@ h2 > span,
 
 .about-section {
   background: var(--bg-soft);
-  border-block: 1px solid #1c1c1c;
+  border-block: 1px solid #333333;
 }
 
 .about-grid {
@@ -602,7 +597,7 @@ h2 > span,
   position: relative;
   min-width: 0;
   aspect-ratio: 0.95 / 1;
-  background: #191919;
+  background: #292929;
 }
 
 .about-visual > img {
@@ -662,7 +657,7 @@ h2 > span,
   min-width: 0;
   aspect-ratio: 3 / 4;
   overflow: hidden;
-  background: #171717;
+  background: #292929;
 }
 
 /* Убираем прежнее растягивание первой фотографии */
@@ -774,7 +769,7 @@ h2 > span,
 
 .contact-banner {
   padding-block: 58px;
-  background: #111;
+  background: #242424;
   border-block: 1px solid #29212d;
 }
 
@@ -856,7 +851,7 @@ h2 > span,
   align-items: center;
   gap: 20px;
 
-  border-top: 1px solid #242424;
+  border-top: 1px solid #383838;
   color: #777;
   font-size: 9px;
   font-weight: 700;
@@ -998,7 +993,7 @@ h2 > span,
     gap: 0;
 
     padding: 35px var(--side-padding);
-    background: rgba(10, 10, 10, 0.98);
+    background: rgba(30, 30, 30, 0.97);
     border-top: 1px solid #29212d;
 
     visibility: hidden;
@@ -1045,14 +1040,14 @@ h2 > span,
     background:
       linear-gradient(
         90deg,
-        rgba(10, 10, 10, 0.92),
-        rgba(10, 10, 10, 0.5)
+        rgba(30, 30, 30, 0.92),
+        rgba(30, 30, 30, 0.5)
       ),
       linear-gradient(
         0deg,
         var(--bg),
         transparent 35%,
-        rgba(10, 10, 10, 0.15)
+        rgba(30, 30, 30, 0.15)
       );
   }
 
