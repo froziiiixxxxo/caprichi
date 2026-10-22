@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <title>КАПРИЧЧИ — Пицца с характером</title>
+  <meta name="description" content="Пиццерия Каприччи. Авторская пицца, яркие вкусы и атмосфера, в которую хочется вернуться.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="top">
+    <div class="container header-inner">
+
+      <a class="logo" href="#top" aria-label="Каприччи — на главную">
+        КАПРИЧЧИ
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navigation" id="navigation" aria-label="Основная навигация">
+        <a href="#menu">Меню</a>
+        <a href="#about">О нас</a>
+        <a href="#atmosphere">Атмосфера</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a class="button button-small header-order" href="#menu">
+        Заказать <span aria-hidden="true">↗</span>
+      </a>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <!--
+        ФОНОВАЯ ФОТОГРАФИЯ:
+        Замени images/hero.jpg на путь к своей фотографии.
+        Лучше использовать широкое фото пиццы или интерьера в формате 16:9.
+      -->
+
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          ПИЦЦА С ХАРАКТЕРОМ
+        </div>
+
+        <h1>
+          Пицца, которая<br>
+          <span>взрывает вкус.</span>
+        </h1>
+
+        <p class="hero-description">
+          Хрустящее тесто, правильные ингредиенты
+          и сочетания, ради которых хочется вернуться.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="button">
+            Смотреть меню <span aria-hidden="true">↗</span>
+          </a>
+          <a href="#about" class="text-link">
+            Познакомиться с нами <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-bottom">
+          <span>ХОРОШИЙ ВКУС — БЕЗ КОМПРОМИССОВ</span>
+          <a href="#menu" aria-label="Перейти к меню">01 / 03 <span>↓</span></a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= MENU ================= -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">01 / НАШЕ МЕНЮ</div>
+            <h2>Есть из чего<br><span>выбрать.</span></h2>
+          </div>
+
+          <p class="section-description">
+            Никаких случайных сочетаний.
+            Только продукты, которые работают вместе.
+          </p>
+        </div>
+
+        <!--
+          ДОБАВЛЕНИЕ ПИЦЦЫ:
+          Скопируй целиком один блок article.pizza-card.
+          Замени фото, название, описание, вес и цену.
+        -->
+
+        <div class="pizza-grid">
+
+          <article class="pizza-card">
+            <div class="pizza-photo">
+              <!-- ФОТО ПИЦЦЫ №1 -->
+              <img src="images/margarita.png"
+                   alt="Пицца Маргарита"
+                   loading="lazy">
+              <span class="pizza-number">01</span>
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title-row">
+                <h3>Маргарита</h3>
+                <span class="pizza-price">369 ₽</span>
+              </div>
+              <p>Моцарелла, томатный соус, базилик.</p>
+              <div class="pizza-meta">
+                <span>КЛАССИКА</span>
+
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card">
+            <div class="pizza-photo">
+              <!-- ФОТО ПИЦЦЫ №2 -->
+              <img src="images/pepperoni.png"
+                   alt="Пицца Пепперони"
+                   loading="lazy">
+              <span class="pizza-number">02</span>
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title-row">
+                <h3>Пепперони</h3>
+                <span class="pizza-price">499 ₽</span>
+              </div>
+              <p>Пикантная пепперони, моцарелла, томаты.</p>
+              <div class="pizza-meta">
+                <span>БЕСТСЕЛЛЕР</span>
+             
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card">
+            <div class="pizza-photo">
+              <!-- ФОТО ПИЦЦЫ №3 -->
+              <img src="images/fourcheese.png"
+                   alt="Пицца Четыре сыра"
+                   loading="lazy">
+              <span class="pizza-number">03</span>
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title-row">
+                <h3>Четыре сыра</h3>
+                <span class="pizza-price">499 ₽</span>
+              </div>
+              <p>Моцарелла, горгонзола, пармезан, чеддер.</p>
+              <div class="pizza-meta">
+                <span>СЫРНЫЙ ХАРАКТЕР</span>
+                
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card">
+            <div class="pizza-photo">
+              <!-- ФОТО ПИЦЦЫ №4 -->
+              <img src="images/marinara.png"
+                   alt="Пицца Маринара"
+                   loading="lazy">
+              <span class="pizza-number">04</span>
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title-row">
+                <h3>Маринара</h3>
+                <span class="pizza-price">790 ₽</span>
+              </div>
+              <p>Итальянские томаты, чеснок, орегано.</p>
+              <div class="pizza-meta">
+                <span>Чистая Италия на тарелке.</span>
+                
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="menu-footer">
+          <p>ЭТО ТОЛЬКО НАЧАЛО. В МЕНЮ ЕСТЬ ЕЩЁ.</p>
+          <!-- Замени # на ссылку на доставку или онлайн-заказ -->
+          <a class="text-link" href="#contacts">
+            Узнать о заказе <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-copy">
+          <div class="section-kicker">02 / ФИЛОСОФИЯ КАПРИЧЧИ</div>
+
+          <h2>
+            Мы за вкус.<br>
+            <span>И точка.</span>
+          </h2>
+
+          <p>
+            Хорошая пицца не нуждается в лишних словах.
+            Ей нужны правильное тесто, качественные продукты
+            и внимание к деталям.
+          </p>
+
+          <p>
+            Мы делаем ставку на вкус, а не на громкие обещания.
+            Приходи за своей любимой пиццей — и найди новую.
+          </p>
+
+          <a class="text-link" href="#atmosphere">
+            Почувствовать атмосферу <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="about-visual">
+          <!-- ФОТО: процесс приготовления или пицца крупным планом -->
+          <img src="images\pizzacrupno.png"
+               alt="Пицца из печи крупным планом"
+               loading="lazy">
+
+          <div class="about-stamp">
+            <span>КАЧЕСТВО</span>
+            <span class="stamp-line"></span>
+            <span>В КАЖДОЙ ДЕТАЛИ</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= ATMOSPHERE ================= -->
+    <section class="section atmosphere-section" id="atmosphere">
+      <div class="container">
+
+        <div class="section-heading atmosphere-heading">
+          <div>
+            <div class="section-kicker">03 / МЕСТО, КУДА ХОЧЕТСЯ</div>
+            <h2>Атмосфера<span>.</span></h2>
+          </div>
+          <p class="section-description">
+            Встречи, разговоры и пицца в центре стола.
+          </p>
+        </div>
+
+        <div class="gallery">
+
+          <figure class="gallery-item gallery-large">
+            <!-- ФОТО ЗАЛА №1 -->
+            <img src="images\zal2.jpg"
+                 alt="Интерьер пиццерии Каприччи"
+                 loading="lazy">
+            <figcaption>01 — ПРОСТРАНСТВО</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <!-- ФОТО ЗАЛА №2 -->
+            <img src="images\zal3.jpg"
+                 alt="Детали интерьера пиццерии"
+                 loading="lazy">
+            <figcaption>02 — ДЕТАЛИ</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <!-- ФОТО ЗАЛА №3 -->
+            <img src="images/zal1.jpg"
+                 alt="Атмосфера в пиццерии"
+                 loading="lazy">
+            <figcaption>03 — НАСТРОЕНИЕ</figcaption>
+          </figure>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= CONTACTS / CTA ================= -->
+    <section class="contact-banner">
+      <div class="container contact-banner-inner">
+        <div>
+          <div class="section-kicker">ТВОЙ СЛЕДУЮЩИЙ ВКУСНЫЙ ВЕЧЕР</div>
+          <h2>Ну что, закажем?</h2>
+        </div>
+
+        <!-- Укажи здесь реальную ссылку для заказа -->
+        <a class="button" href="#contacts">
+          Связаться с нами <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" id="contacts">
+    <div class="container">
+
+      <div class="footer-main">
+
+        <div class="footer-brand">
+          <a class="logo" href="#top">
+            КАПРИЧЧИ
+          </a>
+          <p>Пицца с характером.<br>Вкус, который остаётся.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>НАВИГАЦИЯ</h3>
+          <a href="#menu">Меню</a>
+          <a href="#about">О нас</a>
+          <a href="#atmosphere">Атмосфера</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>КОНТАКТЫ</h3>
+
+          <!-- ЗАМЕНИ на настоящий адрес -->
+          <p>Ваш адрес, город</p>
+
+          <!-- ЗАМЕНИ на настоящий телефон -->
+          <a href="tel:+70000000000">+7 (000) 000-00-00</a>
+
+          <!-- ЗАМЕНИ на настоящий график работы -->
+          <p>Ежедневно: 10:00–23:00</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>МЫ В СЕТИ</h3>
+
+          <!-- Замени # на реальные ссылки -->
+          <a href="#" target="_blank" rel="noopener noreferrer">ВКонтакте ↗</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Telegram ↗</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Другие соцсети ↗</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="current-year">2026</span> КАПРИЧЧИ</span>
+        <span>СДЕЛАНО С ХОРОШИМ ВКУСОМ.</span>
+        <a href="#top">НАВЕРХ ↑</a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
