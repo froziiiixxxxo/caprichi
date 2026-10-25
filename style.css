@@ -2808,3 +2808,77 @@ select {
     box-shadow: none;
   }
 }
+
+
+
+/* =========================
+   REVIEWS
+   ========================= */
+
+.reviews-section {
+  background: var(--bg);
+  border-top: 1px solid #333333;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.reviews-card {
+  min-width: 0;
+  min-height: 190px;
+  padding: 24px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  transition: border-color var(--transition);
+}
+
+.reviews-card:hover {
+  border-color: var(--purple);
+}
+
+.reviews-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.reviews-card__name {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.reviews-card__date {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.reviews-card__stars {
+  margin-bottom: 14px;
+  color: var(--pink);
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.reviews-card__text {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 680px) {
+  .reviews-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .reviews-card {
+    padding: 20px;
+  }
+}
